@@ -1,0 +1,51 @@
+html{
+    box-sizing: border-box;
+    font-weight: 700;
+    color: black;
+}
+
+body{
+    background: linear-gradient(to right, orange, black);
+    margin: 20px;
+}
+
+.top{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "party party cta1"
+    "party party cta2"
+}
+
+.party{
+    grid-area: party;
+    min-height: 450px;
+    background-image: url(../img/pngtree-horror-halloween-silhouette-illustration-background-design-redillustration-backgroundhalloweenfestivalbatwastelandmoonspider-webadvertising-image_66103.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.price{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.cta p{
+    margin: 0;
+}
+
+.cta{
+    background: yellow;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.cta1{
+    grid-area: cta1;
+}
+
+.cta2{
+    grid-area: cta2;
+}
