@@ -9,6 +9,11 @@ body{
     margin: 20px;
 }
 
+.wrapper{
+    display: grid;
+    gap: 20px;
+}
+
 .top{
     display: grid;
     gap: 20px;
@@ -23,6 +28,11 @@ body{
     background-image: url(../img/pngtree-horror-halloween-silhouette-illustration-background-design-redillustration-backgroundhalloweenfestivalbatwastelandmoonspider-webadvertising-image_66103.jpg);
     background-size: cover;
     background-position: right;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.7rem;
+    padding-top: 100px;
+    padding-left: 2px;
+    text-align: center;
 }
 
 .price{
@@ -35,7 +45,7 @@ body{
 }
 
 .cta{
-    background: yellow;
+    background: rgb(255, 204, 95);
     display: grid;
     align-items: center;
     justify-items: center;
@@ -48,4 +58,32 @@ body{
 
 .cta2{
     grid-area: cta2;
+}
+
+button{
+    background: rgb(255, 204, 95);
+    border: 0;
+    padding: 20px;
+}
+
+.menu ul{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu a{
+    background: rgb(255, 204, 95);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+[aria-controls="menu-list"]{
+    display: none;
 }
