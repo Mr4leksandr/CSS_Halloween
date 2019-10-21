@@ -87,3 +87,25 @@ button{
 [aria-controls="menu-list"]{
     display: none;
 }
+
+.features{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature{
+    background: rgb(255, 204, 95);
+    padding: 10px;
+    text-align: center;
+    box-sizing: 0 0 4px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+}
+
+.feature .icon{
+    font-size: 3rem;
+}
+
+.feature p {
+    color: rgba(0,0,0,0.5);
+}
