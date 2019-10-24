@@ -61,7 +61,7 @@ body{
 }
 
 button{
-    background: white;
+    background: yellow;
     border: 0;
     padding: 20px;
 }
@@ -154,4 +154,62 @@ button{
     content: "";
     height: 10px;
     background: linear-gradient(to right, black, transparent);
+}
+
+@media (max-width: 1000px){
+    .menu{
+        order: -1;
+        perspective: 800px;
+    }
+
+    [aria-controls="menu-list"]{
+        display: block;
+    }
+
+    [aria-expanded="false"] .close{
+        display: none;
+    }
+
+    [aria-expanded="true"] .open{
+        display: none;
+    }
+
+    .menu ul {
+        max-height: 0;
+        overflow: hidden;
+        transform: rotateX(90deg);
+        transition: all 0.5s;
+        font-size: 1rem;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: grid;
+        max-height: 500px;
+        transform: rotateX(0);
+    }
+}
+
+@media (max-width: 700px){
+    body{
+        margin: 0;
+    }
+
+    .top{
+        grid-template-areas: 
+        "party party"
+        "cta1 cta2"
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px){
+    .top{
+        grid-template-areas: 
+        "party"
+        "cta1"
+        "cta2"
+    }
 }

@@ -100,15 +100,15 @@
     </div>
 
     <script>
-      const menuButton = document.querySelector("button[aria-expanded]");
+      const menuButton = document.querySelector('button[aria-expanded]');
 
-      function toggleMenu(target){
-        const expanded = target.getAttribute("aria-expanded") === "true" || false;
-        menuButton.setAttribute("aria-expanded", !expanded);
+      function toggleMenu({target}){
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        menuButton.setAttribute('aria-expanded', !expanded);
         console.log("Toggled!");
       }
 
-      menuButton.addEventListener("click", toggleMenu);
+      menuButton.addEventListener('click', toggleMenu);
 
     </script>
 
